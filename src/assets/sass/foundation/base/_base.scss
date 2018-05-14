@@ -1,0 +1,166 @@
+/*
+#overview
+base
+
+site common base style.
+
+*/
+
+/*
+#styleguide
+link
+
+commom link style.
+
+```
+<a href="">title01</a>
+```
+
+*/
+html {
+  font-size: $base-fontsize;
+}
+
+body {
+  @include fontsize();
+  font-family: $font-sans-serif;
+  font-weight: $base-fontweight;
+  color: $text-color;
+  background-color: $white;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "pkna";
+  //
+  //.safari & {
+  //  font-feature-settings : "pkna"; // follow back -- ios10 safari10
+  //}
+  @media screen\0 {
+    font-family: $font-ie;
+  }
+}
+
+a {
+  //color: $primary-color;
+  //transition: $duration-fast;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  height: auto;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgba($text-color, 1);
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: $black;
+  outline: none;
+}
+
+::selection {
+  background: $thirdry-color;
+  color: $text-color;
+}
+
+.wrap {
+}
+
+//
+// ----- frontnote style ----- //
+*[class^=fn-] {
+  text-align: left;
+}
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//

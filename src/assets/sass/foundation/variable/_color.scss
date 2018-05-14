@@ -1,0 +1,68 @@
+/*
+#overview
+
+color
+
+common site color palette
+
+*/
+
+/*
+#colors
+
+@primary #d6101c
+@secondary #fd3a45
+@thirdry-color #00a0e9
+
+@white #fafafa
+@black #3f3a39
+@gray #424242
+@light-gray #d6d3cd
+*/
+
+// =========================================================
+//
+// site color
+//
+// =========================================================
+//
+$primary-color: #d6101c !default;
+$secondary-color: #fd3a45 !default;
+$thirdry-color: #00a0e9 !default;
+$fourth-color: #dbb870 !default;
+//
+$primary-gradient: linear-gradient(45deg, $primary-color 20%, $secondary-color 85%) !default;
+$primary-bg-color: #f7f7f7 !default;
+$secondary-bg-color: #dcdcdc !default;
+
+$white: #ffffff !default;
+$black: #000000 !default;
+$gray: #3f3c3c !default;
+$dark-gray: #251e1c !default;
+$light-gray: #c8c8c9 !default;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
