@@ -36,7 +36,9 @@ const gulp = require('gulp'),
       //
       // CSS
       // - - - - - - - - -
-      autoprefixer = require('gulp-autoprefixer'), // prefix
+      postcss = require('gulp-postcss'),
+      autoprefixer = require('autoprefixer'),
+      postcssGapProperties = require('postcss-gap-properties'),
       sass = require('gulp-sass'), // Sass compass
       csscomb = require('gulp-csscomb'), // css
       cssmin = require('gulp-cssmin'), // css min
@@ -86,15 +88,18 @@ gulp.task('sass', () => {
       title: 'Style Guide'
     }))
     .pipe(sass())
-    .pipe(autoprefixer({
-      browsers: [
-        'last 2 version',
-        'Android >= 4.4.4',
-        'Explorer 11',
-      ],
-      cascade: false,
-      grid: true
-    }))
+    .pipe(postcss([
+      postcssGapProperties(),
+      autoprefixer({
+        browsers: [
+          'last 2 version',
+          'Android >= 4.4.4',
+          'Explorer 11',
+        ],
+        cascade: false,
+        grid: true,
+      })
+    ]))
     .pipe(csscomb())
     .pipe(gulp.dest(distPath.cssPath + '/'))
     .pipe(cssmin())
